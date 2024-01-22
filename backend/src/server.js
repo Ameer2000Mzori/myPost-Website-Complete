@@ -5,6 +5,8 @@ import router from "./routes/router.js";
 
 // running app and getting router
 const app = express();
+// using jason
+app.use(express.json());
 // using router
 app.use(router);
 
