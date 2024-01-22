@@ -5,10 +5,14 @@ import express from "express";
 import "dotenv/config";
 
 const app = express();
+const router = express.Router();
+
+app.use(router);
+
 const PORT = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  console.log("hallo world");
+router.get("/", (req, res) => {
+  res.send("hallo world");
 });
 
 app.listen(PORT, () => {
