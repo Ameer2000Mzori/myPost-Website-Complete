@@ -1,20 +1,17 @@
-// need a server package
-// need to distribute the server to people
-
+// importing
 import express from "express";
 import "dotenv/config";
+import router from "./routes/router.js";
 
+// running app and getting router
 const app = express();
-const router = express.Router();
-
+// using router
 app.use(router);
 
+// getting port from .env
 const PORT = process.env.PORT || 3000;
 
-router.get("/", (req, res) => {
-  res.send("hallo world");
-});
-
+// app listen
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
 });
