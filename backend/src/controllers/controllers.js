@@ -36,6 +36,7 @@ export const fetchPosts = (req, res) => {
 export const createPost = (req, res) => {
   let { title, user, likes } = req.body;
   const newPost = {
+    id: Math.random().toString(26).slice(2),
     title,
     user,
     likes,

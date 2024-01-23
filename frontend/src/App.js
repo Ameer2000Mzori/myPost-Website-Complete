@@ -15,10 +15,15 @@ function App() {
 
   return (
     <div>
-      <h1>Video List</h1>
+      <h1>posts List</h1>
       <ul>
-        {posts.map((post, index) => (
-          <p key={index}>{post.title}</p>
+        {posts.map((post) => (
+          <div key={post.id} className="post-Wrap">
+            {console.log(post.id)}
+            <p>{post.title}</p>
+            <h4>{post.user}</h4>
+            <p>{post.likes}</p>
+          </div>
         ))}
       </ul>
     </div>
