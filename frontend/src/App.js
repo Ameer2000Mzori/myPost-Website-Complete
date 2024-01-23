@@ -19,7 +19,6 @@ function App() {
       <ul>
         {posts.map((post) => (
           <div key={post.id} className="post-Wrap">
-            {console.log(post.id)}
             <p>{post.title}</p>
             <h4>{post.user}</h4>
             <p>{post.likes}</p>
