@@ -18,7 +18,7 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
-> Navigation-Nation is a website crafted using HTML, CSS, and JavaScript, with the added benefit of linters to address any errors in the code, and it's built with Webpack as its primary focus. This project leverages advanced CSS and JavaScript coding techniques. Feel free to explore the demo link.
+> MyPost-Website-Complete is a website created using HTML, CSS, and JavaScript, with React for the frontend. For the backend, .env and Express.js were utilized, along with additional packages to set up ports and APIs. Feel free to download the project and take a look.
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
